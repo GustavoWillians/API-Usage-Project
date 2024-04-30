@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Squealer';
+    src: url('/assets/fonts/Squealer.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Squealer', sans-serif;
+    font-size: larger;
+    color: aliceblue;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+footer {
+    background-image: url('/assets/barra.jpg');
+    background-repeat: repeat; /* Para repetir a imagem de fundo */
+    display: flex; /* Para centralizar conteúdo verticalmente */
+    justify-content: center; /* Para centralizar conteúdo horizontalmente */
+    align-items: center; /* Para centralizar conteúdo verticalmente */
+    height: 3em auto ; /* Altura do footer */
+    
+}
+
+.logo {
+    width: 15%; /* Para garantir que a imagem não ultrapasse o tamanho do footer */
+    height: 100%; /* Para manter a proporção da imagem */
+    margin: auto;
+    margin-left: 45%;
+}
+
+.cara {
+    align-self: flex-end; /* Para alinhar a imagem no final do footer */
+    width: 05%; /* Para garantir que a imagem não ultrapasse o tamanho do footer */
+    height: 100%; /* Para manter a proporção da imagem */
+    margin-left: auto;
+}
+
+
+
+
+main {
+    background-image:  url('/assets/fundo.jpg');
+    background-size: cover; /* Para cobrir todo o fundo */
+    background-position: center; /* Para centralizar a imagem */
+    display: flex; /* Para centralizar conteúdo verticalmente */
+    justify-content: center; /* Para centralizar conteúdo horizontalmente */
+    align-items: center; /* Para centralizar conteúdo verticalmente */
+    flex-direction: column; /* Para alinhar os elementos verticalmente */
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 35%;
+}
+
+/* Estilos para a caixa de pesquisa */
+.pesquisa input[type="search"] {
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #d4950d;
+    border-radius: 4px;
+    margin-right: -40px;
+    flex: 1;
+}
+
+/* Estilos para o botão de imagem */
+.pesquisa input[type="image"] {
+    width: 20%; /* Largura da imagem */
+    border: none; /* Remover a borda padrão */
+    cursor: pointer; /* Cursor ao passar por cima */
+
+}
+
+.blocos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que os blocos quebrem para a próxima linha */
+    width: 110%; /* Largura para ocupar a maior parte da largura da janela */
+    margin-bottom: 15px at;
+    
+
+}
+
+/* Estilos para os blocos */
+
+.bloco {
+    width: calc(13.33% - 20px); /* Largura de aproximadamente 33.33% com espaço entre os blocos */
+    margin: 5px; /* Espaçamento entre os blocos */
+    box-sizing: border-box; /* Para incluir padding na largura */
+}
+
+/* Estilos para as imagens */
+.bloco img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%; /* Para ocupar toda a largura do bloco */
+    height: auto; /* Para manter a proporção da imagem */
+    cursor: pointer; /* Alterar o cursor para uma mãozinha */
+    margin: 0 auto; /* Para alinhar ao centro horizontalmente */
+}
+
+
+
+.carregar-mais-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width: 75%;
+    padding: 2em;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Z-index alto para estar acima de outros elementos */
+    gap: 2em;
+}
+
+.imagem-destaque {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain; /* Manter a proporção da imagem */
+    cursor: pointer;
+}
+
+.refrescar{
+    margin-top: 3.5em;
+    display: flex; /* Para centralizar conteúdo verticalmente */
+    justify-content: center; /* Para centralizar conteúdo horizontalmente */
+    align-items: center; /* Para centralizar conteúdo verticalmente */
+    gap: 5em;
+}
+
+.att-cara{
+    height: auto;
+    width: auto;
+    padding: 1.5em;
+    margin-right: -180px;
+    cursor: pointer; /* Cursor ao passar por cima */
+
+
+}
+
+h1{
+    margin-top: 1.5em;
+    
+}
+
+.triangulo{
+width: 25%; /* Largura da imagem */
+height: 25%; /* Altura da imagem */
+cursor: pointer; /* Cursor ao passar por cima */
+transform: rotate(-90deg); /* Rotacionar a imagem em 45 graus */
+}
