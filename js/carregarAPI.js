@@ -158,7 +158,7 @@ async function atualizarDados() {
             if (bloco) {
                 const imageElement = bloco.querySelector('img');
                 if (imageElement) {
-                    imageElement.src = '/assets/carta.jpg';
+                    imageElement.src = './assets/carta.jpg';
                 }
             }
         }
