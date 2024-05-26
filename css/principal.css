@@ -15,7 +15,7 @@ body {
     overflow-x: hidden;
 }
 
-footer {
+header {
     background-image: url('/assets/barra.jpg');
     background-repeat: repeat; /* Para repetir a imagem de fundo */
     display: flex; /* Para centralizar conteúdo verticalmente */
@@ -170,3 +170,10 @@ height: 25%; /* Altura da imagem */
 cursor: pointer; /* Cursor ao passar por cima */
 transform: rotate(-90deg); /* Rotacionar a imagem em 45 graus */
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
